@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+
+/*container start*/
+.container {
+    width: 1140px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*container end*/
+
+/*header start*/
+header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid rgb(87, 87, 87);
+    padding: 0px 15px;
+    z-index: 5;
+    background-color: rgb(32, 32, 32);
+}
+header > .head-height {
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+header .row > #title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+}
+header .row .navbar > a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+}
+/*header end*/
+
+/*main 1 start*/
+#main {
+    min-height: 100vh;
+    background: url(../Images/BG2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+#main .home1-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 100%;
+    margin-top: 13%;
+}
+#main .home1-content .img-caption{
+    border-left: 5px solid white;
+    flex: 0 0 50%;
+    padding-left: 30px;
+    color: #ffffff;
+}
+#main .home1-content .img-caption > h1{
+    font-size: 100px;
+}
+#main .home1-content .img-caption h1 > span {
+    font-weight: lighter;
+    font-size: 80px;
+}
+#main .home1-content .img-caption > h2 {
+    font-size: 60px;
+    font-weight: lighter;
+    margin-left: 20%;
+}
+#main .home1-content .img-caption > h3 {
+    font-size: 35px;
+    font-weight: lighter;
+}
+#main .home1-content .img-div{
+    flex: 0 0 50%;
+    text-align: center;
+}
+#main .home1-content .img-div > #image {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: groove 5px white;
+}
+#main .home1-content .img-div > h3 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+/*main 1 end*/
+
+/*home 2 start*/
+.home2 {
+    min-height: 100vh;
+}
+.home2 .home2-content > h2{
+    text-align: center;
+    margin: 2.3% 0;
+    font-size: 50px;
+}
+.home2 .home2-content > #tribute-link{
+    min-height: 40vh;
+    align-items: center;
+    padding: 4% 12%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.home2 .home2-content > #tribute-link > h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.home2 .home2-content > #tribute-link > h3 {
+    font-size: 22px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.home2 .home2-content > #tribute-link > h3 > #tribute-link {
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+    transition: ease-in-out .2s;
+}
+.home2 .home2-content > #tribute-link > h3 > #tribute-link:hover{
+    color: red;
+    text-shadow: gold -2px -2px 1px;
+}
+.home2 .home2-content .bot2 {
+    min-height: 40vh;
+    align-items: center;
+    padding: 4% 12%;
+    background-image: url(../Images/BG2.jpg);
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+.home2 .home2-content .bot2 > h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+@keyframes example {
+    0% {color: rgb(71, 0, 0);}
+    50% {color: rgb(175, 0, 0);}
+    100% {color: rgb(99, 0, 0);}
+}
+
+.home2 .home2-content .bot2 > h3::before {
+    content: "“";
+    position: absolute;
+    font-size: 200px;
+    left: 7%;
+    margin-top: -43px;
+    color: black;
+    letter-spacing: .1px;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.home2 .home2-content .bot2 p {
+    margin-top: 2%;
+    text-align: right;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2px;
+}
+/*home 2 end*/
+
+/*home 3 start*/
+.home3 {
+    min-height: 140vh;
+    background-color: rgb(26, 26, 26);
+    color: #ffffff;
+}
+.home3 .home3-content {
+    align-items: center;
+    justify-content: center;
+}
+.home3 .home3-content > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+.home3 .home3-content ul {
+    margin: 5% 0;
+}
+.home3 .home3-content ul li {
+    margin: 50px 0;
+    line-height: 35px;
+    font-size: 25px;
+    font-weight: lighter;
+    list-style: square;
+}
+/*home 3 end*/
+
+/*home 4 start*/
+.home4 {
+    min-height: 20vh;
+    border-top: 1px solid rgb(87, 87, 87);
+    background-color: rgb(26, 26, 26);
+    color: #ffffff;
+}
+.home4 .container > .row {
+    justify-content: center;
+}
+.home4 .home4-content {
+    text-align: center;
+    margin: 10% 0;
+    width: 100%;
+}
+.home4 .home4-content > h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+
+@keyframes dots {
+    0% {content: "";}
+    25% {content: "";}
+    50% {content: ".";}
+    75% {content: "..";}
+    100% {content: "...";}
+}
+
+.home4 .home4-content > h3 {
+    position: absolute;
+    margin-top: -4%;
+    left: 25%;
+}
+.home4 .home4-content > h3::after {
+    content: "";
+    animation-name: dots;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.home4 .home4-content a {
+    position: relative;
+    background-color: rgb(255, 42, 42);
+    width: 15%;
+    border-radius: 50px;
+    margin: auto;
+    top: 30px;
+    transition: ease-in-out .2s;
+}
+.home4 .home4-content a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 40px;
+}
+.home4 .home4-content a:hover {
+    background-color: rgb(255, 2, 2);
+    box-shadow: 0 0px 10px 5px rgb(221, 49, 49);
+    padding: 25px 45px;
+}
+/*home 4 end*/
+
+/*footer start*/
+footer {
+    min-height: 10vh;
+    left: 0px;
+    right: 0px;
+    border-top: 1px solid rgb(87, 87, 87);
+    padding: 0px 15px;
+    z-index: 5;
+    background-color: rgb(32, 32, 32);
+}
+footer .fcon {
+    text-align: center;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+/*footer end*/
+
+/*1920x1080*/
+@media(max-width:1920px)
+{
+#main {
+    min-height: 70vh;
+}
+.home3 {
+    min-height: 100vh;
+}
+.home4 .home4-content > h3 {
+    left: 30%;
+}
+}
+/*1920x1080*/
+
+/*1768x992*/
+@media(max-width:1768px)
+{
+#main {
+    min-height: 75vh;
+}
+.home4 .home4-content > h3 {
+    left: 29%;
+}
+}
+/*1768x992*/
+
+/*1680x1050*/
+@media(max-width:1680px)
+{
+.home2 {
+    min-height: 80vh;
+}
+.home2 .home2-content .bot2 {
+    min-height: 20vh;
+}
+}
+/*1680x1050*/
+
+/*1600x1024*/
+@media(max-width:1600px)
+{
+.home4 .home4-content > h3 {
+    left: 26%;
+}
+#main {
+    min-height: 85vh;
+}
+}
+/*1600x1024*/
+
+/*1360x768*/
+@media(max-height:1360px)
+{
+#main {
+    min-height: 100vh;
+}
+.home3 {
+    min-height: 130vh;
+}
+.home4 .home4-content > h3 {
+    left: 22%;
+}
+}
+/*1360x768*/
+
+/*1280x1024*/
+@media(max-width:1280px)
+{
+#main {
+    min-height: 80vh;
+}
+.home3 {
+    min-height: 100vh;
+}
+    @media (max-height:800px) {
+    #main {
+        min-height: 95vh;
+    }
+    }
+    @media (max-height:768px) {
+    #main {
+        min-height: 100vh;
+    }
+    }
+    @media (max-height:720px) {
+    #main {
+        min-height: 110vh;
+    }
+    }
+}
+/*1280x1024*/
+
+/*1176x664*/
+@media(max-width:1176px){
+#main {
+    min-height: 115vh;
+}
+.home2 .home2-content .bot2 > h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    width: 95%;
+    margin: auto;
+}
+.home2 .home2-content .bot2 > h3::before {
+    font-size: 180px;
+    margin-top: -35px;
+}
+.home4 .home4-content > h3 {
+    left: 19%;
+}
+}
+/*1176x664*/
+
+/*1152x864*/
+@media(max-width:1152px){
+    #main {
+        min-height: 90vh;
+    }
+}
+/*1176x664*/
+
+/*1024x768*/
+@media(max-width:1024px){
+.container {
+    width: 1024px;
+}
+#main .home1-content .img-caption > h1 {
+    font-size: 90px;
+}
+#main .home1-content .img-caption > h3 {
+    font-size: 30px;
+}
+#main .home1-content .img-div > #image {
+    height: 400px;
+    width: 400px;
+}
+#main .home1-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 90%;
+    margin-top: 13%;
+}
+.home4 .home4-content > h3 {
+    left: 14%;
+}
+}
+/*1024x768*/
+
+/*800x600*/
+@media(max-width:800px){
+.container {
+    width: 800px;
+}
+#main{
+    min-height: 75vh;
+}
+#main .home1-content .img-caption h1 > span {
+    font-size: 40px;
+}
+#main .home1-content .img-caption > h1 {
+    font-size: 50px;
+}
+#main .home1-content .img-div > #image {
+    height: 250px;
+    width: 250px;
+}
+#main .home1-content .img-caption > h3 {
+    font-size: 20px;
+}
+.home2 .home2-content > h2 {
+    font-size: 30px;
+}
+.home2 .home2-content > #tribute-link > h2 {
+    font-size: 25px;
+}
+.home2 .home2-content > #tribute-link > h3 {
+    font-size: 12px;
+}
+.home2 .home2-content .bot2 > h3 {
+    font-size: 20px;
+}
+.home2 .home2-content .bot2 > h3::before {
+    font-size: 180px;
+    margin-top: -40px;
+    font-weight: lighter;
+}
+.home3 .home3-content > h1 {
+    font-size: 30px;
+}
+.home3 .home3-content ul li {
+    margin: 35px 0;
+    line-height: 25px;
+    font-size: 18px;
+}
+.home4 .home4-content > h3 {
+    left: 20%;
+    font-size: 18px;
+}
+.home4 .home4-content a {
+    padding: 10px 30px;
+}
+footer .fcon {
+    font-size: 8px;
+}
+}
+/*800x600*/
