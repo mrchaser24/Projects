@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    max-width: 1355px;
+}
+.container {
+    display: grid;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    grid-template: repeat(8, 50px) / repeat(8, 50px);
+    border: 1px solid black;
+}
+.row {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 211, 170);
+}
+.black {
+    background-color: rgb(216, 172, 114);
+}
